@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <div id="app">
+            <div class="container">
+                <div id="app">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-7 form">
+                                <label for="country_name" class="heading">Type a country name</label>
+
+                                <input v-model="item" id="country_name" type="text" class="form-control"
+                                    placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center ">
+                            <div class="col-7 content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" v-for="country in filterdCountry">
+                                        {{ country.country}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

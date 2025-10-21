@@ -1,0 +1,24 @@
+/* .col-7{
+    margin: 0 !important;
+    padding: 0 !important;
+}  */
+
+section{
+    margin: 100px 0 100px;
+}
+
+.form{
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #ddd;
+}
+
+label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.content{
+    padding: 30px;
+    background-color: #ddd;
+}
